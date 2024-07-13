@@ -268,6 +268,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/overlay/common \
     vendor/lineage/overlay/no-rro
 
+PRODUCT_COPY_FILES += \
+    vendor/lineage/overlay/rro_packages/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml
+
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay
